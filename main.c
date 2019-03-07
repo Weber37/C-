@@ -4,13 +4,11 @@
 void main(){
     float x;
     int n=1,count=0;
-    double sum=x,term=x;
-    //define
+    double sum,term;
     printf("Input x:");
     scanf("%f",&x);
     sum=x;
     term=x;
-    //input
     do{
         term=-term*x*x/((n + 1)*(n + 2));
         sum+=term;
@@ -18,4 +16,4 @@ void main(){
         count++;
     }while(fabs(term)>=1e-5);
     printf("sin(x)=%f,count=%d\n",sum,count);
-}
+    /*使用泰勒公式sinx=x-x^3/3!+x^5/5!…计算sinx的值，输出结果并输出项数*/
