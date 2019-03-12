@@ -2,12 +2,12 @@
 #include <math.h>
 
 void main(){
-    int n,temp,i,j,k=1;
+    int n,temp,i,j,k=1; //k是每一行的第一个元素，k=1是第一行第一列的值
     printf("Input n:");
     scanf("%d",&n);
-    for(j=1;j<=n;j++){
-        temp=k;
-        for(i=1;i<=n-j+1;i++){
+    for(j=1;j<=n;j++){  //j是行
+        temp=k;  //temp是打印的每个元素的值
+        for(i=1;i<=n-j+1;i++){ //i是列
             printf("%5d",temp);
             temp+=i+j;
         }
